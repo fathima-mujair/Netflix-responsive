@@ -140,6 +140,8 @@ body{
 }
 
 
+/* image banner and contents */
+
 .imgbanner{
     height: 450px;
     width:95%;
@@ -213,6 +215,9 @@ border-radius: 25px;
 
 }
 
+
+/* email and button */
+
 .content2{
     /* position: absolute; */
     display: flex;
@@ -225,37 +230,6 @@ border-radius: 25px;
     top: 650px;
     /* left: 300px; */
 }
-
-@media only screen and (max-width: 600px){
-    .email-con{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 10px;
-    }
-
-    .email input{
-        margin-bottom: 10px;
-        width: 100% !important;
-    }
-
-    .button2{
-        padding-left: 23%;
-        /* margin-bottom: 10px !important; */
-    
-    }
-
-    .button2 button{
-        margin-bottom: 50px !important;
-    }
-}
-
-@media only screen and (max-width:370px)
-{
-    .button2{
-        padding-left: 11%;
-    }
-}
-
 .email input{
     border-style: solid;
     border-width: .1px;
@@ -296,8 +270,41 @@ border-radius: 25px;
     transition: .4s;
 }
 
+
+@media only screen and (max-width: 600px){
+    .email-con{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .email input{
+        margin-bottom: 10px;
+        width: 100% !important;
+    }
+
+    .button2{
+        padding-left: 23%;
+        /* margin-bottom: 10px !important; */
+    
+    }
+
+    .button2 button{
+        margin-bottom: 50px !important;
+    }
+}
+
+@media only screen and (max-width:370px)
+{
+    .button2{
+        padding-left: 11%;
+    }
+}
+
+/* netflix ad section */
+
 .content3{
-    /* left: 130px; */
+   
     top: 700px;
     height:90px;
     width:100%;
@@ -382,10 +389,6 @@ transition: .8s;
     .column2 button{
         margin-top: 8% !important;
     }
-
-    .content9{
-        top: 2850px !important;
-    }
 }
 
 @media only screen and (max-width: 600px){
@@ -420,6 +423,7 @@ transition: .8s;
         padding-left: 10px;
     }
 }
+
 @media only screen and (max-width: 750px){
     .column1 p{
         font-size: 12px !important;
@@ -432,27 +436,10 @@ transition: .8s;
     .content3{
         width: 500px !important;
     }
-    .content4{
-        margin-top: 40px;
-        left: 20px !important;
-        width: 100% !important;
-    }
-
-    .content5{
-        margin-top: 40px;
-        left: 20px !important;
-        width: 100% !important;
-    }
-
-    .col9-1{
-   flex-wrap: wrap !important;
-    }
-   
-    .col9-2{
-        flex-wrap: wrap;
-    }
-    
 }
+
+
+/* netflix movies  */
 
 .content4{
     position: absolute;
@@ -506,13 +493,24 @@ transition: .8s;
     width: 85%;
 }
 
-.head6 ,.head7, .head8{
-    font-size: 25px;
-    font-weight: 600;
-    font-family: poppins;
-    margin-bottom: 10px;
-    margin-top: 20px;
+@media only screen and (max-width: 750px){
+   
+    .content4{
+        margin-top: 40px;
+        left: 20px !important;
+        width: 100% !important;
+    }
+
+    .content5{
+        margin-top: 40px;
+        left: 20px !important;
+        width: 100% !important;
+    }
+    
 }
+
+/* netflix Plans */
+
 .content6{
     position: absolute;
     top: 1600px;
@@ -532,59 +530,15 @@ transition: .8s;
 .column6 svg{
     width: 20px;
 }
-@media only screen and (max-width: 960px)
-{
-
-    .content6{
-        width: 100%;
-        left:30px;
-    }
-    .column6{
-        flex-direction: column;
-        width: 95%;
-        
-    }
-    .col1,.col2,.col3{
-        width: 100% !important;
-        margin-bottom: 15px;
-        height: 250px !important;
-    }
-    
-    .content7{
-        width: 100%;
-        margin-top: 550px;
-        left:30px !important;
-    }
-    .column7{
-        flex-direction: column !important;
-        width: 95%;
-        
-    }
-    .col7-1,.col7-2,.col7-3,.col7-4{
-        width: 100% !important;
-        margin-bottom: 15px;
-    }
-    .content8{
-        margin-top: 1050px;
-        left:30px !important;
-    }
-
-    .content9{
-        margin-top: 900px;
-        flex-direction: column !important;
-    }
-    .lastbtn{
-        display: none;
-    }
-    .dropdown {
-        display: none;
-    }
-    .country{
-        display: none;
-    }
-
-    
+.head6 ,.head7, .head8{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: poppins;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
+
+
 
 .col1,.col2,.col3{
     width: 350px;
@@ -647,6 +601,28 @@ transition: .8s;
     margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 960px)
+{
+
+    .content6{
+        width: 100%;
+        left:30px;
+    }
+    .column6{
+        flex-direction: column;
+        width: 95%;
+        
+    }
+    .col1,.col2,.col3{
+        width: 100% !important;
+        margin-bottom: 15px;
+        height: 250px !important;
+    }
+}
+
+
+/* Netflix features */
+
 .content7{
     position: absolute;
     top: 1920px;
@@ -690,6 +666,28 @@ transition: .8s;
     left: 10px;
 }
 
+@media only screen and (max-width: 960px)
+{
+    
+    .content7{
+        width: 100%;
+        margin-top: 550px;
+        left:30px !important;
+    }
+    .column7{
+        flex-direction: column !important;
+        width: 95%;
+        
+    }
+    .col7-1,.col7-2,.col7-3,.col7-4{
+        width: 100% !important;
+        margin-bottom: 15px;
+    }
+}
+
+
+/* frequently asked questions */
+
 
 .content8{
     position: absolute;
@@ -732,6 +730,18 @@ transition: .8s;
     font-weight: 600;
 }
 
+@media only screen and (max-width: 960px)
+{
+    
+    .content8{
+        margin-top: 1050px;
+        left:30px !important;
+    }
+    
+}
+
+/* get start button */
+
 .lastbtn button{
     position: absolute;
     /* position: sticky; */
@@ -755,6 +765,19 @@ transition: .8s;
     background-color: brown;
     transition: .4s;
 }
+
+@media only screen and (max-width: 960px)
+{
+    
+   
+    .lastbtn{
+        display: none;
+    }
+
+    
+}
+
+/* important links  */
 
 .content9{
     position: absolute;
@@ -780,12 +803,44 @@ transition: .8s;
 }
 
 .col9{
-    margin-right: 100px;
+    margin-right: 150px;
     width: 100%;
     opacity: .5;
 }
 
 .col9 p{
     margin-top: 10px;
+    
+}
+
+
+@media only screen and (max-width: 400px){
+    
+    .content9{
+        top: 2850px !important;
+    }
+}
+
+@media only screen and (max-width: 750px){
+   
+    .col9-1{
+   flex-wrap: wrap !important;
+    }
+   
+    .col9-2{
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media only screen and (max-width: 960px)
+{
+    
+   
+    .content9{
+        margin-top: 900px;
+        flex-direction: column !important;
+    }
+   
     
 }
